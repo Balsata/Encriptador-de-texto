@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300&display=swap"
+        rel="stylesheet">
+    <title>Encriptador de texto</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img class="logo" src="images/Logo.png" alt=""></a>
+    </header>
+
+    <div class="show-text">
+        <textarea class="rectangulo" cols="30" rows="10" readonly></textarea>
+        <div id="images">
+            <img class="fondo" src="images/Muñeco.png" alt="">
+            <p class="text-p">Ningún mensaje fue encontrado</p>
+            <p class="text-s">Ingresa el texto que desees encriptar o desencriptar.</p>
+        </div>
+        <button class="copiar">Copiar</button>
+    </div>
+
+    <section>
+        <textarea class="inputt" cols="30" rows="10" placeholder="Ingrese el texto aqui" autofocus></textarea>
+    </section>
+    <div style="    display: flex;
+align-items: baseline;
+position: relative;
+top: -100px;
+left: 150px;">
+        <p class="informacion"><img class="info" src="images/info.png" alt="info">Solo letras minúsculas y sin
+            acentos</p>
+    </div>
+    <div class="butts">
+        <button class="encriptar">Encriptar</button>
+        <button class="desencriptar">Desencriptar</button>
+    </div>
+
+    <footer>
+        <div class="footer">
+
+            <p> &copy Bryan Saenz 2023 <a href="https://github.com/Balsata" target="_blank"><img
+                        src="images/github-mark.png" alt=""></a><a href="https://www.linkedin.com/in/bryansaenzt/"
+                    target="_blank"><img src="images/linkedin.png" alt=""></a></p>
+
+        </div>
+    </footer>
+</body>
+<script src="functions.js"></script>
+
+</html>
