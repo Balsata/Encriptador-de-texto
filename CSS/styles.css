@@ -5,40 +5,49 @@
   font-size: 32px;
   line-height: 150%;
 }
-
-.logo {
-  padding-top: 30px;
-  margin-left: 30px;
-  width: 5%;
-}
-
 main {
   display: flex;
   margin-bottom: 10px;
   margin-left: 180px;
+  justify-content: space-around;
+}
+
+header {
+  width: 50%;
+}
+
+.logo {
+  padding-top: 25px;
+  margin-left: 25px;
+  width: 7%;
 }
 
 .informacion {
-  width: 305px;
-  height: 18px;
   font-style: normal;
   font-size: 16px;
   color: #495057;
   opacity: 0.8;
-  margin-left: 10px;
 }
 
-.info {
+.informacion img {
   margin-right: 10px;
+}
+
+.botones {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  text-align: center;
 }
 
 .encriptar {
   background-color: #0a3871;
-  border-style: hidden;
+  border-color: #0a3871;
+  border-style: solid;
   border-radius: 24px;
   padding: 24px;
   color: white;
-  width: 328px;
+  width: 308px;
   height: 67px;
   font-size: 20px;
   font-style: normal;
@@ -50,38 +59,25 @@ main {
 
 .encriptar:hover {
   cursor: pointer;
-  background-color: #b9bcbf;
-  color: #0a3871;
+  background-color: #d8dfe8;
+  color: black;
   transition: 0.4s all;
   transform: scale(1.02);
   border-color: blue;
-}
-
-.butts {
-  margin: 0 auto;
-  height: 130px;
-  left: 500px;
-  display: flex;
-  align-items: baseline;
-  position: relative;
-  top: -100px;
-  left: 150px;
-  z-index: 1;
 }
 
 .desencriptar {
   background-color: #d8dfe8;
   border-radius: 24px;
   padding: 24px;
-  color: #0a3871;
-  width: 328px;
+  color: black;
+  width: 308px;
   height: 67px;
   font-style: normal;
   line-height: 19px;
   text-align: center;
   border-color: blue;
   font-size: 20px;
-  border-style: hidden;
 }
 
 .desencriptar:hover {
@@ -97,7 +93,6 @@ main {
 .inputt {
   background: none;
   border: none;
-  position: absolute;
   width: 577px;
   height: 430px;
   left: 240px;
@@ -110,7 +105,6 @@ main {
   color: #0a3871;
   text-transform: lowercase;
   resize: none;
-  display: flex;
 }
 
 .inputt::placeholder {
@@ -120,86 +114,62 @@ main {
   font-weight: 400;
   font-size: 32px;
   line-height: 150%;
+  text-transform: initial;
 }
 
 .inputt:focus {
   outline-style: none;
 }
 
-.showtext {
-  display: flex;
-}
-
 .rectangulo {
-  position: absolute;
-  width: 400px;
-  height: 600px;
-  left: 1000px;
-  top: 40px;
-  background: #ffffff;
-  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-  border-radius: 32px;
-  resize: none;
-  padding: 40px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 150%;
-  color: darkblue;
-  display: flex;
-  text-align: justify;
-  text-transform: lowercase;
+  position: relative;
+  height: 630px;
+  background: white;
+  background-image: url("/images/Muñeco.png");
+  background-repeat: no-repeat;
+  background-position: 10px 50px;
   border: none;
+  border-radius: 24px;
+  color: #0a3871;
+  margin-left: 98px;
+  margin-top: 20px;
+  padding-left: 20px;
+  resize: none;
 }
 
 .rectangulo:focus {
   outline-style: none;
 }
 
-.fondo {
-  position: relative;
-  width: 336px;
-  height: 304px;
-  left: 1032px;
-  top: 20px;
-  margin: 0 32px 0 32px;
-}
-
 .text-p {
-  position: relative;
-  width: 336px;
-  height: 58px;
-  font-family: "Inter";
-  font-style: normal;
+  position: absolute;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 29px;
   text-align: center;
+  font-size: 24px;
   color: #343a40;
-  display: flex;
-  margin: 50px 32px 0 32px;
-  left: 1032px;
+  line-height: 28.8px;
+  margin-bottom: 20px;
+  background: white;
+  width: 336px;
+  top: 480px;
+  right: 73px;
 }
 
 .text-s {
-  position: relative;
-  width: 336px;
-  height: 48px;
-  font-family: "Inter";
-  font-style: normal;
+  position: absolute;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
   text-align: center;
+  font-size: 16px;
   color: #495057;
-  margin: 30px 32px 0 32px;
-  left: 1032px;
+  line-height: 24px;
+  background: white;
+  width: 336px;
+  top: 550px;
+  right: 73px;
 }
 
 .copiar {
-  position: relative;
-  margin: 20px 0 0 86px;
+  position: absolute;
   background-color: #0a3871;
   border-radius: 20px;
   padding: 14px;
@@ -208,11 +178,12 @@ main {
   height: 47px;
   font-size: 20px;
   line-height: 19px;
-  text-align: center;
-  left: 1032px;
-  border-style: hidden;
-  visibility: hidden;
+  border-style: solid;
+  visibility: visible;
+  border-color: #0a3871;
   z-index: 2;
+  top: 625px;
+  right: 125px;
 }
 
 .copiar:hover {
@@ -221,4 +192,5 @@ main {
   transform: scale(1.05);
   background-color: #d8dfe8;
   color: black;
+  border-color: blue;
 }
