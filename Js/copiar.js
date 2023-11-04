@@ -1,14 +1,23 @@
 export function copiar() {
-    const copy = document.querySelector(".rectangulo");
-    const input = document.querySelector(".inputt");
-    const copiar = document.querySelector(".copiar")
+    // Obtener elementos del DOM
+    const textoCopia = document.querySelector(".rectangulo");
+    const campoEntrada = document.querySelector(".inputt");
+    const botonCopiar = document.querySelector(".copiar");
+    const textoP = document.querySelector(".text-p");
+    const textoS = document.querySelector(".text-s");
 
-    copy.select();
-    navigator.clipboard.writeText(copy.value);
-    copy.value = "";
-    copy.style.backgroundImage = 'url("/images/Muñeco.png")';
-    input.value = "";
-    copiar.style.visibility = 'hidden';
+    // Seleccionar y copiar el texto al portapapeles
+    textoCopia.select();
+    navigator.clipboard.writeText(textoCopia.value);
 
+    // Restablecer los valores y estilos
+    textoCopia.value = "";
+    textoCopia.style.backgroundImage = 'url("/images/Muñeco.png")';
+    campoEntrada.value = "";
+    botonCopiar.style.visibility = 'hidden';
+    textoP.style.display = "block";
+    textoS.style.display = "block";
+
+    // Mostrar un mensaje de confirmación
     alert("Texto Copiado");
 }

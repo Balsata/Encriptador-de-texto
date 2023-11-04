@@ -1,10 +1,11 @@
 * {
   background: #f3f5fc;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 32px;
   line-height: 150%;
 }
+
 main {
   display: flex;
   margin-bottom: 10px;
@@ -22,6 +23,7 @@ header {
   width: 7%;
 }
 
+
 .informacion {
   font-style: normal;
   font-size: 16px;
@@ -33,6 +35,7 @@ header {
   margin-right: 10px;
 }
 
+
 .botones {
   display: flex;
   justify-content: center;
@@ -40,55 +43,47 @@ header {
   text-align: center;
 }
 
-.encriptar {
-  background-color: #0a3871;
-  border-color: #0a3871;
-  border-style: solid;
+.boton {
   border-radius: 24px;
   padding: 24px;
-  color: white;
   width: 308px;
   height: 67px;
-  font-size: 20px;
   font-style: normal;
+  font-size: 20px;
   line-height: 19px;
   text-align: center;
+  cursor: pointer;
+  transition: 0.4s all;
+  transform: scale(1);
+  border-color: blue;
+  border-style: solid;
+}
+
+.encriptar {
+  background-color: #0a3871;
+  color: white;
   margin-right: 20px;
   margin-top: 30px;
 }
 
 .encriptar:hover {
-  cursor: pointer;
   background-color: #d8dfe8;
   color: black;
-  transition: 0.4s all;
   transform: scale(1.02);
-  border-color: blue;
 }
 
 .desencriptar {
   background-color: #d8dfe8;
-  border-radius: 24px;
-  padding: 24px;
   color: black;
-  width: 308px;
-  height: 67px;
-  font-style: normal;
-  line-height: 19px;
-  text-align: center;
-  border-color: blue;
-  font-size: 20px;
+  border-style: hidden;
 }
 
 .desencriptar:hover {
-  cursor: pointer;
   background-color: #0a3871;
   color: white;
-  transition: 0.4s all;
   transform: scale(1.02);
-  border-color: da;
-  border-style: hidden;
 }
+
 
 .inputt {
   background: none;
@@ -97,49 +92,53 @@ header {
   height: 430px;
   left: 240px;
   top: 128px;
-  font-family: "Inter";
   font-style: normal;
-  font-weight: 400;
   font-size: 25px;
   line-height: 150%;
   color: #0a3871;
   text-transform: lowercase;
   resize: none;
+  outline: none;
 }
 
 .inputt::placeholder {
   color: #0a3871;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 150%;
   text-transform: initial;
 }
 
-.inputt:focus {
-  outline-style: none;
+
+.container {
+  position: relative;
+  background-color: white;
+  width: 470px;
+  height: 630px;
+  border-radius: 24px;
 }
 
+
 .rectangulo {
-  position: relative;
-  height: 630px;
+  position: absolute;
+  width: 420px;
+  height: 500px;
+  right: 4px;
+  top: -20px;
   background: white;
   background-image: url("/images/Muñeco.png");
   background-repeat: no-repeat;
-  background-position: 10px 50px;
-  border: none;
+  background-position: 50% 50px;
   border-radius: 24px;
   color: #0a3871;
   margin-left: 98px;
   margin-top: 20px;
   padding-left: 20px;
   resize: none;
+  line-height: 1.3;
+  border: none;
+  padding: 20px 20px;
+  font-size: 25px;
+  outline: none;
 }
 
-.rectangulo:focus {
-  outline-style: none;
-}
 
 .text-p {
   position: absolute;
@@ -151,8 +150,8 @@ header {
   margin-bottom: 20px;
   background: white;
   width: 336px;
-  top: 480px;
-  right: 73px;
+  top: 60%;
+  right: 13%;
 }
 
 .text-s {
@@ -164,9 +163,10 @@ header {
   line-height: 24px;
   background: white;
   width: 336px;
-  top: 550px;
-  right: 73px;
+  top: 70%;
+  right: 13%;
 }
+
 
 .copiar {
   position: absolute;
@@ -179,11 +179,11 @@ header {
   font-size: 20px;
   line-height: 19px;
   border-style: solid;
-  visibility: visible;
+  visibility: hidden;
   border-color: #0a3871;
   z-index: 2;
-  top: 625px;
-  right: 125px;
+  top: 87%;
+  right: 27%;
 }
 
 .copiar:hover {
@@ -193,4 +193,47 @@ header {
   background-color: #d8dfe8;
   color: black;
   border-color: blue;
+}
+
+footer {
+  margin-top: 40px;
+  background-color: #d8dfe8;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d8dfe8;
+  height: 25px;
+}
+
+.footer-container p {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  color: black;
+  background-color: #d8dfe8;
+  margin: 0 100px;
+}
+
+.footer-container a {
+  display: inline-block;
+  margin: 0 10px;
+  transition: transform 0.2s;
+  background-color: #d8dfe8;
+}
+
+.footer-container a:hover {
+  transform: scale(1.1);
+}
+
+.footer-container img {
+  background-color: #d8dfe8;
+}
+
+.icons {
+  background-color: #d8dfe8;
 }

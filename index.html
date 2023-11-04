@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Encriptador de texto en línea">
     <link rel="stylesheet" href="./CSS/reset.css">
     <link rel="stylesheet" href="./CSS/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,28 +21,41 @@
         <a href="index.html"><img class="logo" src="images/BS.png" alt="Logo iniciales BS"></a>
     </header>
     <main>
+        <!-- Sección de entrada de texto -->
         <section>
-            <textarea class="inputt" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <textarea class="inputt" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
             <div>
-
                 <h6 class="informacion"><img src="/images/info.png" alt="">Solo letras minúsculas y sin acentos</h6>
             </div>
             <div class="botones">
-                <button class="encriptar">Encriptar</button>
-                <button class="desencriptar">Desencriptar</button>
+                <button class="boton encriptar">Encriptar</button>
+                <button class="boton desencriptar">Desencriptar</button>
             </div>
         </section>
 
+        <!-- Sección de resultado de texto -->
         <section>
-            <div class="mensaje-cifrado">
+            <div class="container">
                 <textarea class="rectangulo" cols="20" rows="10" readonly></textarea>
                 <p class="text-p">Ningún mensaje fue encontrado</p>
                 <p class="text-s">Ingresa el texto que desees encriptar o desencriptar.</p>
                 <button class="copiar">Copiar</button>
             </div>
         </section>
-
     </main>
+    <footer>
+        <div class="footer-container">
+            <p>Creado por Bryan Saenz 2023</p>
+            <div class="icons">
+
+                <a href="https://github.com/Balsata" target="_blank"><img src="./images/github.svg" alt="Github icon"
+                        class="icono"></a>
+                <a href="https://www.linkedin.com/in/bryansaenzt/" target="_blank"><img src="./images/linkedin.svg"
+                        alt="Linkedin icon" class="icono"></a>
+
+            </div>
+        </div>
+    </footer>
 </body>
 <script src="./Js/index.js" type="module"></script>
 
