@@ -6,11 +6,23 @@
   line-height: 150%;
 }
 
-main {
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
   display: flex;
-  margin-bottom: 10px;
-  margin-left: 180px;
-  justify-content: space-around;
+  flex-direction: column;
+}
+
+
+main {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+  margin: 0;
 }
 
 header {
@@ -236,4 +248,64 @@ footer {
 
 .icons {
   background-color: #d8dfe8;
+}
+
+
+@media screen and (max-width: 768px) {
+  .inputt {
+    width: 90vw;
+    height: 200px;
+    font-size: 18px;
+  }
+
+  .botones {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .boton {
+    width: 90vw;
+    font-size: 18px;
+    height: 55px;
+  }
+
+  .container {
+    width: 90vw;
+    height: auto;
+    padding: 20px;
+  }
+
+  .rectangulo {
+    position: static;
+    width: 100%;
+    height: 200px;
+    margin: 0;
+    padding: 10px;
+    background-position: center top;
+    background-size: contain;
+  }
+
+  .text-p, .text-s {
+    position: static;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .copiar {
+    position: static;
+    width: 100%;
+    margin-top: 15px;
+    height: 45px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .footer-container p {
+    margin: 0;
+  }
 }
