@@ -6,7 +6,7 @@
 
   
 
-A text encryptor built with **HTML, CSS, and JavaScript**. This application transforms text using a simple substitution logic and allows you to decrypt it as well. It features a **responsive**, modern design that adapts to mobile devices.
+A text encryptor built with **HTML, CSS, and JavaScript**. This application transforms text using a simple substitution logic and allows you to decrypt it as well.
 
  
 
@@ -18,7 +18,7 @@ A text encryptor built with **HTML, CSS, and JavaScript**. This application tran
 
 - HTML5
 
-- CSS3 (with responsive design and media queries)
+- CSS3
 
 - JavaScript ES6
 
@@ -37,10 +37,6 @@ A text encryptor built with **HTML, CSS, and JavaScript**. This application tran
 - ✅ Copy result to clipboard
 
 - ✅ Validates input (only lowercase letters without accents)
-
-- ✅ Fully responsive (mobile, tablet, desktop)
-
-
 
   
 
@@ -182,7 +178,7 @@ Developed by **Bryan Saenz** – [LinkedIn](https://www.linkedin.com/in/bryansae
 
   
 
-Encriptador de texto desarrollado con **HTML, CSS y JavaScript**. Esta aplicación permite transformar texto con una lógica de sustitución simple y también desencriptarlo. Cuenta con un diseño **responsive**, moderno y adaptado para dispositivos móviles.
+Encriptador de texto desarrollado con **HTML, CSS y JavaScript**. Esta aplicación permite transformar texto con una lógica de sustitución simple y también desencriptarlo.
 
   
 
@@ -192,7 +188,7 @@ Encriptador de texto desarrollado con **HTML, CSS y JavaScript**. Esta aplicaci�
 
 - HTML5
 
-- CSS3 (con diseño responsive y media queries)
+- CSS3
 
 - JavaScript ES6
 
